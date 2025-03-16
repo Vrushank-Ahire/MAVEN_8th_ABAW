@@ -58,8 +58,14 @@ $$P = \frac{\text{CCC}_{\text{valence}} + \text{CCC}_{\text{arousal}}}{2}$$
 
 ### Baseline Results
 The baseline model (pre-trained ResNet-50) achieves the following performance on the validation set:
-- \(\text{CCC}_{\text{valence}} = 0.24\)
-- \(\text{CCC}_{\text{arousal}} = 0.20\)
+- $$
+\text{CCC}_{\text{valence}} = 0.24
+$$
+
+$$
+\text{CCC}_{\text{arousal}} = 0.20
+$$
+
 - \( P = 0.22 \)
 
 ## Results
