@@ -12,8 +12,7 @@ This repository contains the implementation of **MAVEN (Multi-modal Attention fo
 5. [Evaluation](#evaluation)
 6. [Results](#results)
 7. [Usage](#usage)
-8. [Citation](#citation)
-9. [License](#license)
+8. [License](#license)
 
 ## Introduction
 MAVEN is designed to recognize emotions in conversational videos by using multi-modal data (visual, audio, and textual). The proposed model employs modality-specific encoders (Swin Transformer for video, HuBERT for audio, and RoBERTa for text) to extract rich feature representations. Our work focuses on the bidirectional cross-modal attention mechanism, which refines each modality's representation through weighted attention from other modalities, followed by self-attention refinement.
@@ -101,19 +100,6 @@ To train and evaluate the MAVEN model, follow these steps:
    ```bash
    python Test.py
    ```
-
-## Citation
-If you use this code or the MAVEN model in your research, please cite our paper:
-
-```bibtex
-@article{maven2025,
-  title={MAVEN: Multi-modal Attention for Valence-Arousal Emotion Network},
-  author={Author Name and Second Author},
-  journal={Journal Name},
-  year={2023},
-  publisher={Publisher}
-}
-```
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
