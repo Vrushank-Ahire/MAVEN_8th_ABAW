@@ -89,14 +89,14 @@ To train and evaluate the MAVEN model, follow these steps:
 
 4. **Train the Model**:
    ```bash
-   python embedding.py
-   python trainBEiT.py
-   python trainMLP.py 
+   python embeddings.py
+   python TrainBEiT.py
+   python TrainMLP.py 
    ```
 
 5. **Evaluate the Model**:
    ```bash
-   python test.py
+   python Test.py
    ```
 
 ## Citation
