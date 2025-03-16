@@ -21,11 +21,6 @@ MAVEN is designed to recognize emotions in conversational videos by using multi-
 ## Dataset
 The model is trained and evaluated on the **Aff-Wild2** dataset, an audiovisual (A/V) dataset containing 594 videos with approximately 3 million frames from 584 subjects. Each frame is annotated with continuous valence and arousal values, representing emotional states along the dimensions of pleasantness (valence) and intensity (arousal).
 
-### Dataset Rules
-- Only **uni-task solutions** (valence-arousal estimation) are allowed.
-- Teams can use any pre-trained model (public or private) as long as it has not been pre-trained on Aff-Wild2.
-- During model refinement, only valence-arousal annotations can be used. Other annotations (e.g., expressions or action units) are not allowed.
-
 ## Model Architecture
 MAVEN consists of the following components:
 1. **Modality-Specific Encoders**:
@@ -44,28 +39,22 @@ MAVEN consists of the following components:
 
 ## Training
 The model is trained using the following setup:
-- **Optimizer**: Adam with a learning rate of `1e-3` and weight decay of `1e-4`.
+- **Optimizer**: Adam with a learning rate of `1e-4` and weight decay of `1e-4`.
 - **Learning Rate Scheduler**: ReduceLROnPlateau with a factor of `0.1` and patience of `5`.
-- **Batch Size**: 16.
-- **Training Duration**: 100 epochs with early stopping (patience of 10 epochs).
-- **Gradient Clipping**: Maximum norm of `1.0` to prevent exploding gradients.
+- **Batch Size**: 8.
+- **Training Duration**: 100 epochs (patience of 10 epochs).
 
 Pre-trained feature extractors (Swin, HuBERT, RoBERTa, and BEiT-3) are frozen during training to focus optimization on the fusion and prediction layers.
 
 ## Evaluation
 
-The performance of the model is evaluated using the **Concordance Correlation Coefficient (CCC)** for both valence and arousal. The overall performance measure $P$ is the average of the CCC values for valence and arousal:  
-
-
+The performance of the model is evaluated using the *Concordance Correlation Coefficient (CCC)* for both valence and arousal. The overall performance measure $P$ is the average of the CCC values for valence and arousal:  
 $$
 P = \frac{CCC_{valence} + CCC_{arousal}}{2}
 $$
 
-
-
 ### Baseline Results
 The baseline model (pre-trained ResNet-50) achieves the following performance on the validation set:
-
 $$
 \text{CCC}_{\text{valence}} = 0.24
 $$
@@ -79,14 +68,14 @@ P = 0.22
 $$
 
 ## Results
-MAVEN demonstrates superior performance in capturing the complex and nuanced nature of emotional expressions in conversational videos. The model achieves state-of-the-art results on the Aff-Wild2 dataset, significantly outperforming the baseline.
+MAVEN demonstrates superior performance in capturing the complex and nuanced nature of emotional expressions in conversational videos. The model achieves SOTA results on the Aff-Wild2 dataset, significantly outperforming the baseline.
 
 ## Usage
 To train and evaluate the MAVEN model, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/MAVEN.git
+   git clone https://github.com/Vrushank-Ahire/MAVEN_8th_ABAW.git
    cd MAVEN
    ```
 
@@ -100,12 +89,14 @@ To train and evaluate the MAVEN model, follow these steps:
 
 4. **Train the Model**:
    ```bash
-   python train.py --batch_size 16 --learning_rate 0.0001 --epochs 100
+   python embedding.py
+   python trainBEiT.py
+   python trainMLP.py 
    ```
 
 5. **Evaluate the Model**:
    ```bash
-   python evaluate.py --model_path path_to_trained_model
+   python test.py
    ```
 
 ## Citation
