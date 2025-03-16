@@ -56,13 +56,11 @@ Pre-trained feature extractors (Swin, HuBERT, RoBERTa, and BEiT-3) are frozen du
 
 The performance of the model is evaluated using the **Concordance Correlation Coefficient (CCC)** for both valence and arousal. The overall performance measure $P$ is the average of the CCC values for valence and arousal:  
 
-$$
-P = \frac{\text{CCC}_{\text{valence}} + \text{CCC}_{\text{arousal}}}{2}
-$$
 
 $$
-P = \frac{\text{CCC}_{\text{valence}} + \text{CCC}_{\text{arousal}}}{2}
+P = \frac{CCC_{valence} + CCC_{arousal}}{2}
 $$
+
 
 
 ### Baseline Results
