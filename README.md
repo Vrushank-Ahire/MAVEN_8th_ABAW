@@ -16,7 +16,7 @@ This repository contains the implementation of **MAVEN (Multi-modal Attention fo
 9. [License](#license)
 
 ## Introduction
-MAVEN is designed to recognize emotions in conversational videos by leveraging multi-modal data (visual, audio, and textual). The model employs modality-specific encoders (Swin Transformer for video, HuBERT for audio, and RoBERTa for text) to extract rich feature representations. The core innovation lies in its bidirectional cross-modal attention mechanism, which refines each modality's representation through weighted attention from other modalities, followed by self-attention refinement.
+MAVEN is designed to recognize emotions in conversational videos by using multi-modal data (visual, audio, and textual). The proposed model employs modality-specific encoders (Swin Transformer for video, HuBERT for audio, and RoBERTa for text) to extract rich feature representations. Our work focuses on the bidirectional cross-modal attention mechanism, which refines each modality's representation through weighted attention from other modalities, followed by self-attention refinement.
 
 ## Dataset
 The model is trained and evaluated on the **Aff-Wild2** dataset, an audiovisual (A/V) dataset containing 594 videos with approximately 3 million frames from 584 subjects. Each frame is annotated with continuous valence and arousal values, representing emotional states along the dimensions of pleasantness (valence) and intensity (arousal).
