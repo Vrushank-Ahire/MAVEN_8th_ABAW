@@ -56,9 +56,10 @@ $$
 
 
 ### Baseline Results
-The baseline model (pre-trained ResNet-50) achieves the following performance on the validation set:
+The baseline model (pre-trained ResNet-50) achieves the following performance on the validation set: 
+
 $$
-\text{CCC}_{\text{valence}} = 0.24
+\text{CCC}_{\text{valence}} = 0.20
 $$
 
 $$
