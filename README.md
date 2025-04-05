@@ -2,7 +2,7 @@
 
 This repository contains the implementation of **MAVEN (Multi-modal Attention for Valence-Arousal Emotion Network)**, a novel architecture for dynamic emotion recognition through dimensional modeling of affect. The model integrates visual, audio, and textual modalities via a bi-directional cross-modal attention mechanism, enabling comprehensive interactions between all modality pairs. MAVEN predicts emotions in polar coordinate form (theta and intensity), aligning with psychological models of the emotion circumplex.
 
-![Architecture Diagram](architecture.jpg)
+![Architecture Diagram](architecture.pdf)
 
 ## Table of Contents
 1. [Introduction](#introduction)
