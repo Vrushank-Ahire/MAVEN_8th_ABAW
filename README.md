@@ -101,6 +101,22 @@ To train and evaluate the MAVEN model, follow these steps:
    python Test.py
    ```
 
+Citation
+If you use this work in your research, please cite our paper:
+bibtex@InProceedings{Ahire_2025_CVPR,
+    author = {Ahire, Vrushank and Shah, Kunal and Khan, Mudasir and Pakhale, Nikhil and Sookha, Lownish and Ganaie, Mudasir and Dhall, Abhinav},
+    title = {MAVEN: Multi-modal Attention for Valence-Arousal Emotion Network},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR) Workshops},
+    month = {June},
+    year = {2025},
+    pages = {5789-5799}
+}
+
+Paper Access
+You can access our paper using the QR code below:
+![Full Paper access](Paper_QR.jpg)
+Alternatively, you can find the paper at: CVPR 2025 Proceedings
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
