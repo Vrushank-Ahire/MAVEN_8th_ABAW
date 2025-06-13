@@ -102,7 +102,8 @@ To train and evaluate the MAVEN model, follow these steps:
    ```
 
 Citation
-If you use this work in your research, please cite our paper:
+If you like our work , please cite our paper:
+```bash
 bibtex@InProceedings{Ahire_2025_CVPR,
     author = {Ahire, Vrushank and Shah, Kunal and Khan, Mudasir and Pakhale, Nikhil and Sookha, Lownish and Ganaie, Mudasir and Dhall, Abhinav},
     title = {MAVEN: Multi-modal Attention for Valence-Arousal Emotion Network},
@@ -111,11 +112,18 @@ bibtex@InProceedings{Ahire_2025_CVPR,
     year = {2025},
     pages = {5789-5799}
 }
-
+```
 Paper Access
-You can access our paper using the QR code below:
-![Full Paper access](Paper_QR.jpg)
-Alternatively, you can find the paper at: CVPR 2025 Proceedings
+📄 Paper Link: Full Paper Access
+You can also access our paper using the QR code below:
+<p align="center">
+  <img src="Paper_QR.png" alt="QR Code for Paper Access" width="200"/>
+  <br>
+  <em>Scan to access the paper</em>
+</p>
+
+📁 Repository: You can also find the paper PDF in our repository-
+MAVEN_Multi-modal_Attention_for_Valence-Arousal_Emotion_Network_CVPRW_2025_paper.pdf
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
